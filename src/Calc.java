@@ -81,7 +81,8 @@ public static String parse(String expression) throws Exception {
             "XLIX", "L", "LI", "LII", "LIII", "LIV", "LV", "LVI", "LVII","LVIII", "LIX", "LX", "LXI", "LXII", "LXIII",
             "LXIV", "LXV", "LXVI", "LXVII", "LXVIII", "LXIX","LXX", "LXXI", "LXXII", "LXXIII", "LXXIV", "LXXV", "LXXVI",
             "LXXVII", "LXXVIII", "LXXIX","LXXX", "LXXXI", "LXXXII", "LXXXIII", "LXXXIV", "LXXXV", "LXXXVI", "LXXXVII",
-            "LXXXVIII", "LXXXIX", "XC", "XCI", "XCII", "XCIII", "XCIV", "XCV", "XCVI", "XCVII", "XCVIII", "XCIX", "C"};
+            "LXXXVIII", "LXXXIX", "XC", "XCI", "XCII", "XCIII", "XCIV", "XCV", "XCVI", "XCVII", "XCVIII", "XCIX", "C"};  
+       // Добавил римские числа в массив, чтобы число совпадало с индексом. Решил проблему X*X . 2322_160224
 
     public static boolean isRoman(String val) {
         for (int i = 0; i < romanArray.length; i++) {
